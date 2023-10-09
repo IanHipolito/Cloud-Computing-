@@ -1,6 +1,5 @@
 body {
-    background-color: #f4f4f4;
-    margin-top: 50px;
+    background-color: #fefefe;
     font-family: 'Lato';
 }
 
@@ -12,14 +11,20 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 1em #ccc;
     transition: all .2s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
 }
 
 .item:hover {
     box-shadow: 0 0 1em #aaa;
+    opacity: 0.8;
+    color: #aaa;
 }
 
 .item.completed {
     text-decoration: line-through;
+    color: red;
 }
 
 .toggles {
@@ -36,4 +41,21 @@ body {
 
 button:focus {
     border: 1px solid #333;
+}
+
+.banner {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 50px;
+    font-family: monospace;
 }
