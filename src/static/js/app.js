@@ -73,11 +73,11 @@ function TodoListCard() {
     if (items === null) return 'Loading...';
 
     return (
-        <React.Fragment>
-            <button onClick={onDeleteAllItems}>Delete All Items</button> 
+        <React.Fragment> 
             <AddItemForm onNewItem={onNewItem} />
+            <button class = "deleteAll" onClick={onDeleteAllItems}>Delete All Items</button>
             {items.length === 0 && (
-                <p className="text-center">No items yet! Add one above!</p>
+                <p className="NoItems">No items yet! Add one above!</p>
             )}
             {items.map(item => (
                 <ItemDisplay
